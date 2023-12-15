@@ -1,43 +1,47 @@
 <div class="container">
     <div class="title-content">
-        <div class="title">
-            <img src="../../../assets/icons/person-icon.svg" alt><h1>
-                Listagem de Clientes </h1>
-        </div>
-        <a class=" btn button-new" routerLink="/formulario"><img
-                src="../../../assets/icons/more-icon.svg" alt>Novo</a>
+      <div class="title">
+        <img src="../../../assets/icons/person-icon.svg" alt><h1>Listagem de Clientes</h1>
+      </div>
+      <a class="btn button-new" routerLink="/formulario">
+        <img src="../../../assets/icons/more-icon.svg" alt>Novo
+      </a>
     </div>
     <hr>
+    <!-- mat-spinner condicionalmente com base em isLoading -->
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+  
     <div class="listagem" *ngFor="let client of clients">
-        <div class="listagem__cliente">
-            <div class="row">
-                <div class="col-md-8"> <h2 class="nome-cliente">{{client.name }}
-                        <p class="cnpj-cliente">{{client.cnpj | mask:
-                            '00.000.000/0000-00' }}</p></h2>
-                </div>
-
-                <div class="col-md-2">
-                    <p class="status-cliente">
-                        <span class="circle"
-                            [class.ativo]="client.status.toLowerCase() === 'ativo'"
-                            [class.inativo]="client.status.toLowerCase() === 'inativo'"></span>{{
-                        client.status }}
-                    </p>
-                </div>
-
-                <div class="col-md-2"> <div class="button-content">
-                        <button class="btn button-edit">
-                            Editar </button>
-                    </div>
-                </div>
-
+      <div class="listagem__cliente">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 class="nome-cliente">{{client.name }}
+              <p class="cnpj-cliente">{{client.cnpj | mask: '00.000.000/0000-00' }}</p>
+            </h2>
+          </div>
+  
+          <div class="col-md-2">
+            <p class="status-cliente">
+              <span class="circle"
+                [class.ativo]="client.status.toLowerCase() === 'ativo'"
+                [class.inativo]="client.status.toLowerCase() === 'inativo'"></span>
+              {{ client.status }}
+            </p>
+          </div>
+  
+          <div class="col-md-2">
+            <div class="button-content">
+              <button class="btn button-edit">Editar</button>
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
+    
     <div class="contador">
-        <div class="col-md-12">
-            <p class="contador-text">Exibindo {{ displayedClients }} de {{ totalClients }} clientes</p>
-        </div>
+      <div class="col-md-12">
+        <p class="contador-text">Exibindo {{ displayedClients }} de {{ totalClients }} clientes</p>
+      </div>
     </div>
-</div>
+  </div>
+  

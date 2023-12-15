@@ -10,6 +10,8 @@ import { ListagemComponent } from './shared/listagem/listagem.component';
 import { FormularioComponent } from './shared/formulario/formulario.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -30,7 +32,8 @@ import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask, provideNgxMas
     HttpClientModule, MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    NgxMaskDirective, NgxMaskPipe
+    NgxMaskDirective, NgxMaskPipe,
+    MatProgressSpinnerModule
   ],
   providers: [provideNgxMask(),
   ],
