@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HeaderComponent } from './header.component';
 
 describe('HeaderComponent', () => {
@@ -8,14 +7,16 @@ describe('HeaderComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HeaderComponent]
+      declarations: [HeaderComponent],
     });
+
     fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  // Testa se o componente foi criado com sucesso
+  it('deve ser criado', () => {
     expect(component).toBeTruthy();
   });
 });

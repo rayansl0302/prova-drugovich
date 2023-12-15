@@ -25,6 +25,7 @@ import { NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask, provideNgxMas
     FormularioComponent
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

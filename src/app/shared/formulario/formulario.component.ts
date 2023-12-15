@@ -10,6 +10,9 @@ import { ClienteService } from 'src/app/service/cliente.service';
   styleUrls: ['./formulario.component.scss']
 })
 export class FormularioComponent {
+  onSubmit() {
+    throw new Error('Method not implemented.');
+  }
   @Input() clients!: Clients;
   @Output() salvarClients = new EventEmitter<Clients>();
   form!: FormGroup;
