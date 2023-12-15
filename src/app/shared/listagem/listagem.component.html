@@ -8,8 +8,11 @@
       </a>
     </div>
     <hr>
-    <!-- mat-spinner condicionalmente com base em isLoading -->
-    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <div *ngIf="isLoading" class="d-flex justify-content-center mt-5">
+        <mat-spinner  [diameter]="40">        
+        </mat-spinner>
+    </div>
+   
   
     <div class="listagem" *ngFor="let client of clients">
       <div class="listagem__cliente">
