@@ -1,0 +1,156 @@
+.title-content {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+
+    .title {
+        display: flex;
+
+        h1 {
+            margin: 0;
+            padding-left: 10px;
+            color: #000;
+            font-family: 'Monda', sans-serif;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+    }
+
+    .button-new {
+        display: flex;
+        align-items: center;
+        max-width: 91px;
+        max-height: 34px;
+
+        border-radius: 5px;
+        background: #4486EA;
+        flex-shrink: 0;
+        text-transform: uppercase;
+
+        color: #FFF;
+        font-family: 'Monda', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        img {
+            margin-right: 3px;
+        }
+    }
+}
+
+.listagem {
+    .listagem__cliente {
+        padding: 11px 13px;
+        background-color: #fff;
+        margin: 10px;
+
+
+
+        color: #000;
+        font-family: 'Monda', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        .nome-cliente {
+            font-size: 18px;
+            display: flex;
+
+            .cnpj-cliente {
+                font-size: 12px;
+                margin-left: 12px;
+            }
+        }
+
+
+
+        .status-cliente {
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+
+            .circle {
+                width: 14px;
+                height: 14px;
+                flex-shrink: 0;
+                display: block;
+                border-radius: 100px;
+                margin-right: 6px;
+                margin-top: 3px;
+
+            }
+
+            .ativo {
+                background-color: #2ACC30;
+
+            }
+
+            .inativo {
+                background-color: #EC2424;
+                margin-left: 15px;
+            }
+
+        }
+    }
+
+    .button-content {
+        display: flex;
+        justify-content: flex-end;
+
+        .button-edit {
+            color: #FFF;
+            font-family: 'Monda', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            max-width: 91px;
+            max-height: 34px;
+
+            border-radius: 5px;
+            background: #E18F53;
+        }
+
+        .button-remove {
+            color: #FFF;
+            font-family: 'Monda', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+
+            max-height: 34px;
+
+            border-radius: 5px;
+            background: #c43434;
+            margin-left: 10px;
+        }
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.contador-text{
+    margin-left: 10px;
+    color: #000;
+    font-family: 'Monda', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}

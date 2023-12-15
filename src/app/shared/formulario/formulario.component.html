@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="title">
+        <img src="../../../assets/icons/person-icon.svg" alt><h1>
+            Novo Cliente
+        </h1>
+    </div>
+    <hr>
+    <form [formGroup]="form" class="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" formControlName="name">
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" formControlName="cnpj" mask="00.000.000/0000-00">
+
+        <label for="status">Status:</label>
+        <select id="status" formControlName="status">
+            <option value="ativo">Ativo</option>
+            <option value="inativo">Inativo</option>
+        </select>
+
+        <button class="btn" [disabled]="!form.valid" (click)="submitForm()">Enviar</button>
+    </form>
+</div>
